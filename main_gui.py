@@ -180,7 +180,8 @@ root.minsize(580,550)
 root.title("Auto Attendance..")
 
 image = Image.open("GUI/register.jpg")
-image=image.resize((580,600), Image.ANTIALIAS)
+image = image.resize((580, 600), Image.Resampling.LANCZOS)
+
 photo = ImageTk.PhotoImage(image)
 
 ''' ************************************************************* Code for Login window starts ********************************************************'''
